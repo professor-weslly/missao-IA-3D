@@ -6,7 +6,7 @@ const caixaPerguntas = document.querySelector(".caixa-perguntas");
 const caixaAlternativas = document.querySelector(".caixa-alternativas");
 const caixaResultado = document.querySelector(".caixa-resultado");
 const textoResultado = document.querySelector(".texto-resultado");
-const  botaoJogarNovamente = document.querySelector(".novamente-btn");
+const botaoJogarNovamente = document.querySelector(".novamente-btn");
 const botaoIniciar = document.querySelector(".iniciar-btn");
 const telaInicial = document.querySelector(".tela-inicial");
 
@@ -57,7 +57,7 @@ function mostraResultado(){
     caixaPerguntas.textContent = `Em 2049, ${nome}`;
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
-    caixaResultado.classlist.add("mostrar");
+    caixaResultado.classList.add("mostrar");
     botaoJogarNovamente.addEventListener("click", jogarNovamente);
 }
 
@@ -75,4 +75,3 @@ function substituiNome() {
 }
 
 substituiNome();
-mostraPergunta();
